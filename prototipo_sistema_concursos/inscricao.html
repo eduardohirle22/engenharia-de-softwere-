@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscrição no Concurso</title>
+  <style>
+    body { font-family: Arial; margin: 2rem; }
+    input, select { width: 100%; margin: 0.5rem 0; padding: 0.5rem; }
+    .form-container { max-width: 600px; margin: auto; }
+    .btn { background-color: blue; color: white; padding: 0.5rem; border: none; cursor: pointer; width: 100%; }
+    .success { color: green; }
+    .error { color: red; }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Inscrição no Concurso</h2>
+    <select required>
+      <option value="">Selecione o Concurso</option>
+      <option value="1">Concurso 001 - Prefeitura</option>
+    </select>
+    <select required>
+      <option value="">Selecione o Cargo</option>
+      <option value="prof">Professor</option>
+    </select>
+    <select required>
+      <option value="">Selecione a Localidade</option>
+      <option value="RJ">Rio de Janeiro</option>
+    </select>
+    <input type="text" placeholder="Nome completo" required>
+    <input type="text" placeholder="CPF" required>
+    <input type="date" placeholder="Data de nascimento" required>
+    <input type="email" placeholder="E-mail" required>
+    <button class="btn">Confirmar Inscrição</button>
+    <p class="success">Inscrição realizada com sucesso! Baixe seu cartão de inscrição.</p>
+    <button class="btn" style="background-color: gray;">Download PDF</button>
+    <p class="error">Erro: CPF inválido ou campo obrigatório não preenchido.</p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Concurso</title>
+  <style>
+    body { font-family: Arial; margin: 2rem; }
+    input, textarea { display: block; width: 100%; margin: 0.5rem 0; padding: 0.5rem; }
+    .btn { background-color: green; color: white; border: none; padding: 0.5rem; width: 100%; }
+    .error { color: red; }
+    .success { color: green; }
+  </style>
+</head>
+<body>
+  <h2>Cadastro de Concurso Público</h2>
+  <form>
+    <input type="text" placeholder="Número do Edital" required>
+    <input type="text" placeholder="Órgão Contratante" required>
+    <input type="text" placeholder="Cargos Disponíveis" required>
+    <input type="text" placeholder="Localidades" required>
+    <input type="date" placeholder="Data de Abertura" required>
+    <input type="date" placeholder="Data de Encerramento" required>
+    <textarea placeholder="Critérios de Avaliação"></textarea>
+    <button class="btn">Salvar Concurso</button>
+    <p class="success">Concurso salvo com sucesso!</p>
+    <p class="error">Erro: dados incompletos ou inválidos.</p>
+  </form>
+</body>
+</html>
